@@ -10,7 +10,7 @@ import (
 	"github.com/mmcdole/gofeed"
 )
 
-func handler(w http.ResponseWriter, r *http.Request) {
+func Handler(w http.ResponseWriter, r *http.Request) {
 	cors.Default().Handler(http.HandlerFunc(feedHandler)).ServeHTTP(w, r)
 }
 
